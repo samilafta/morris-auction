@@ -21,8 +21,8 @@
 
                 @endguest
             {{--<li> <a href="{{ route('login') }}"> Admin</a></li>--}}
-            <li><i class="fa fa-phone" aria-hidden="true"></i> Call : 01234567898</li>
-            <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i> Call : +233 234 567 8901</li>
+            <li><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:info@example.com">morrisauction@gmail.com</a></li>
         </ul>
     </div>
 </div>
@@ -31,11 +31,11 @@
 <div class="header-bot">
     <div class="header-bot_inner_wthreeinfo_header_mid">
         <div class="col-md-4 header-middle">
-            <form action="#" method="post">
-                <input type="search" name="search" placeholder="Search here..." required="">
-                <input type="submit" value=" ">
-                <div class="clearfix"></div>
-            </form>
+            {{--<form action="#" method="post">--}}
+                {{--<input type="search" name="search" placeholder="Search here..." required="">--}}
+                {{--<input type="submit" value=" ">--}}
+                {{--<div class="clearfix"></div>--}}
+            {{--</form>--}}
         </div>
         <!-- header-bot -->
         <div class="col-md-4 logo_agile">
@@ -81,25 +81,26 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse menu--shylock" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav menu__list">
-                            <li class="active menu__item menu__item--current"><a class="menu__link" href="{{ route('index') }}">Home <span class="sr-only">(current)</span></a></li>
-                            <li class=" menu__item"><a class="menu__link" href="{{ route('items') }}">Auction Items</a></li>
-                            <li class=" menu__item"><a class="menu__link" href="{{ route('mybids') }}">My Bids</a></li>
-                            <li class=" menu__item"><a class="menu__link" href="{{ route('sell.index') }}">Sell</a></li>
-                            <li class=" menu__item"><a class="menu__link" href="#">Contact</a></li>
+                            <li class="active menu__item @yield('active-home')"><a class="menu__link" href="{{ route('index') }}">Home <span class="sr-only">(current)</span></a></li>
+                            <li class=" menu__item @yield('active-auctions')"><a class="menu__link" href="{{ route('items') }}">Auction Items</a></li>
+                            <li class=" menu__item @yield('active-bids')"><a class="menu__link" href="{{ route('mybids') }}">My Bids</a></li>
+                            <li class=" menu__item @yield('active-sell')"><a class="menu__link" href="{{ route('sell.index') }}">Sell</a></li>
+                            {{--<li class=" menu__item"><a class="menu__link" href="#">Contact</a></li>--}}
                         </ul>
+
                     </div>
                 </div>
             </nav>
         </div>
         <div class="top_nav_right">
-            <div class="wthreecartaits wthreecartaits2 cart cart box_1">
-                <form action="#" method="post" class="last">
-                    <input type="hidden" name="cmd" value="_cart">
-                    <input type="hidden" name="display" value="1">
-                    <button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-                </form>
+            {{--<div class="wthreecartaits wthreecartaits2 cart cart box_1">--}}
+                {{--<form action="#" method="post" class="last">--}}
+                    {{--<input type="hidden" name="cmd" value="_cart">--}}
+                    {{--<input type="hidden" name="display" value="1">--}}
+                    {{--<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>--}}
+                {{--</form>--}}
 
-            </div>
+            {{--</div>--}}
         </div>
         <div class="clearfix"></div>
     </div>

@@ -1,5 +1,10 @@
 @extends('layouts.auction')
 
+@section('active-sell')
+    menu__item--current
+    @parent
+@stop
+
 @section('auction-content')
 
     <div class="page-head_agile_info_w3l">

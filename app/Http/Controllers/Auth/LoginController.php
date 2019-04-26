@@ -51,8 +51,10 @@ class LoginController extends Controller
         if (Auth::guard('buyer')->attempt(['email' => $request->email, 'password' => $request->password],
             $request->get('remember'))) {
 
+            notify()->success('Logged in successfully ');
             return redirect()->intended('/');
         }
+        notify()->info('Login failed. Please try again ');
         return back()->withInput($request->only('email', 'remember'));
     }
 

@@ -1,5 +1,10 @@
 @extends('layouts.auction')
 
+@section('active-home')
+    menu__item--current
+    @parent
+@stop
+
 @section('auction-content')
 
     <!-- banner -->
@@ -244,7 +249,7 @@
                     </div>
                     <div class="w3layouts_mail_grid_left2">
                         <h3>FREE SHIPPING</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur</p>
+                        <p></p>
                     </div>
                 </div>
                 <div class="col-md-4 w3layouts_mail_grid_left">

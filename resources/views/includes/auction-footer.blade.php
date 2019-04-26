@@ -138,6 +138,7 @@
 <!-- js -->
 <script type="text/javascript" src="{{ asset('auction/js/jquery-2.1.4.min.js') }}"></script>
 
+@notify_render
 <!-- //js -->
 <script src="{{ asset('auction/js/modernizr.custom.js') }}"></script>
 <!-- Custom-JavaScript-File-Links -->
@@ -227,6 +228,5 @@
     $("#datetime3, #datetime4").datetimepicker({
         format: 'YYYY-MM-DD HH:mm:ss'
     }).parent().css("position :relative");
-
 
 </script>

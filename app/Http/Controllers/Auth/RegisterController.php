@@ -77,12 +77,13 @@ class RegisterController extends Controller
     protected function createCustomer(Request $request)
     {
         $this->validator($request->all())->validate();
-        $customer = Buyer::create([
+        Buyer::create([
             'name' => $request['name'],
             'email' => $request['email'],
             'phone_number' => $request['phone_number'],
             'password' => Hash::make($request['password']),
         ]);
+        notify()->success('Registered successfully ');
         return redirect()->intended(route('index'))->with('success', 'Account successfully created.');
     }
 }
