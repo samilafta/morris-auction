@@ -19,7 +19,7 @@
                                 <th>Owner</th>
                                 <th>Item Name</th>
                                 <th>Initial Price (GHS)</th>
-                                <th>Item Image</th>
+                                {{--<th>Item Image</th>--}}
                                 <th>Start Date</th>
                                 <th>End Date</th>
                                 <th>Status</th>
@@ -36,14 +36,14 @@
                                     </td>
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->initial_price }}</td>
-                                    <td><img src="{{ asset($item->image) }}" height="50px" width="70px"/></td>
+                                    {{--<td><img src="{{ asset($item->image) }}" height="50px" width="70px"/></td>--}}
                                     <td>{{ \Carbon\Carbon::parse($item->start_date)->toFormattedDateString() }}</td>
                                     <td>{{ \Carbon\Carbon::parse($item->end_date)->toFormattedDateString() }}</td>
                                     <td>
                                         @if($item->status == 0)
-                                            <label class="badge badge-success">Live</label>
+                                            Live
                                         @else
-                                            <label class="badge badge-info">Closed</label>
+                                            Closed
                                         @endif
                                     </td>
                                     {{--<td>--}}

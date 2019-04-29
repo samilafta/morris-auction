@@ -121,12 +121,12 @@
                         @csrf
                     <div class="styled-input agile-styled-input-top">
                         <input type="email" name="email" required=>
-                        <label>Email</label>
+                        <label>Email*</label>
                         <span></span>
                     </div>
                     <div class="styled-input">
                         <input type="password" name="password" required>
-                        <label>Password</label>
+                        <label>Password*</label>
                         <span></span>
                     </div>
                     {{--<div class="styled-input">--}}
@@ -168,27 +168,27 @@
 
                         <div class="styled-input agile-styled-input-top">
                             <input type="text" name="name" required="">
-                            <label>Full Name</label>
+                            <label>Full Name*</label>
                             <span></span>
                         </div>
                         <div class="styled-input">
                             <input type="email" name="email" required="">
-                            <label>Email</label>
+                            <label>Email*</label>
                             <span></span>
                         </div>
                         <div class="styled-input">
                             <input type="text" name="phone_number" required="">
-                            <label>Phone Number</label>
+                            <label>Phone Number*</label>
                             <span></span>
                         </div>
                         <div class="styled-input">
                             <input type="password" name="password" required="">
-                            <label>Password</label>
+                            <label>Password*</label>
                             <span></span>
                         </div>
                         <div class="styled-input">
                             <input type="password" name="password_confirmation" required="">
-                            <label>Confirm Password</label>
+                            <label>Confirm Password*</label>
                             <span></span>
                         </div>
                         <input type="submit" value="Sign Up">

@@ -57,7 +57,7 @@
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="name">Item Name</label>
+                                <label for="name">Item Name*</label>
                                 <input type="text" name="name" class="form-control" id="name" required/>
                                 @if ($errors->has('name'))
                                     <span class="text-danger" role="alert">
@@ -77,7 +77,7 @@
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Initial Item Price (GHS)</label>
+                                <label>Initial Item Price (GHS)*</label>
                                 <input type="number" name="initial_price" class="form-control" required/>
                                 @if ($errors->has('initial_price'))
                                     <span class="text-danger" role="alert">
@@ -89,7 +89,7 @@
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="image">Item Image</label>
+                                <label for="image">Item Image*</label>
                                 <input type="file" name="image" class="form-control-file" id="image" required/>
                                 @if ($errors->has('image'))
                                     <span class="text-danger" role="alert">
@@ -109,7 +109,7 @@
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Start Date</label>
+                                <label>Start Date*</label>
                                 <input type="text" name="start_date" class="form-control" id="datetime3" required/>
                                 @if ($errors->has('start_date'))
                                     <span class="text-danger" role="alert">
@@ -121,7 +121,7 @@
 
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="image">End Date</label>
+                                <label for="image">End Date*</label>
                                 <input type="text" name="end_date" class="form-control" id="datetime4" required/>
                                 @if ($errors->has('end_date'))
                                     <span class="text-danger" role="alert">
@@ -138,7 +138,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="form-group">
-                            <label>Item Description</label>
+                            <label>Item Description*</label>
                             <textarea rows="5" class="form-control border-input" name="description" required></textarea>
                             @if ($errors->has('description'))
                                 <span class="text-danger" role="alert">

@@ -93,9 +93,11 @@ class HomeController extends Controller
 
         $from_date = $request->from_date;
         $to_date = $request->to_date;
+        $status = $request->status;
 
-        $items = Item::whereBetween('created_at', array($from_date, $to_date))->get();
+        $items = Item::whereBetween('created_at', array($from_date, $to_date)) ->where('status', '=', $status)->get();
 
+//
 //        dd($items);
 
         return view('admin.reports.custom', compact('items', 'from_date', 'to_date'));

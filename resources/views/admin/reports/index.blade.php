@@ -16,16 +16,25 @@
                     @csrf
 
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label>From</label>
+                                <label>Enter From Date</label>
                                 <input type="text" class="form-control border-input" name="from_date" id="datepicker3" required>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <div class="form-group">
-                                <label>To</label>
+                                <label>Enter To Date</label>
                                 <input type="text" class="form-control border-input" name="to_date" id="datepicker4" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Status of Auction</label>
+                                <select name="status" class="form-control border-input">
+                                    <option value="0">Live</option>
+                                    <option value="1">Closed</option>
+                                </select>
                             </div>
                         </div>
                     </div>
